@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/desired_league_bg"
     tools:context="com.magdales.swoosh.LeagueScreen">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/swoosh_logo" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/desired_league"
+        android:textColor="@color/fontColor"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/desired_league_button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_margin="5dp"
+        android:alpha="1"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:text="@string/desired_league_1"
+        android:textAllCaps="false"
+        android:textColor="@color/fontColor"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/desired_league_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desired_league_button_1"
+        android:layout_margin="5dp"
+        android:alpha="1"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:text="@string/desired_league_2"
+        android:textAllCaps="false"
+        android:textColor="@color/fontColor"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/desired_league_button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desired_league_button_2"
+        android:layout_margin="5dp"
+        android:alpha="1"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/desired_league_3"
+        android:textAllCaps="false"
+        android:textColor="@color/fontColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/iAm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desired_league_button_3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/i_am_a"
+        android:textColor="@color/fontColor"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iAm"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/fontColor"
+        android:textSize="50sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:alpha="0.50"
+        android:background="@drawable/button_border"
+        android:enabled="false"
+        android:text="@string/next_button"
+        android:textAllCaps="true"
+        android:textColor="@color/fontColor" />
+
+</RelativeLayout>
